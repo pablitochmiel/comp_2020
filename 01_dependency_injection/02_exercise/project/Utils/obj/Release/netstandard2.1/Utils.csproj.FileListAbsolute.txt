@@ -1,9 +1,0 @@
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/bin/Release/netstandard2.1/Utils.deps.json
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/bin/Release/netstandard2.1/Utils.dll
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/bin/Release/netstandard2.1/Utils.pdb
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/obj/Release/netstandard2.1/Utils.csprojAssemblyReference.cache
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/obj/Release/netstandard2.1/Utils.AssemblyInfoInputs.cache
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/obj/Release/netstandard2.1/Utils.AssemblyInfo.cs
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/obj/Release/netstandard2.1/Utils.csproj.CoreCompileInputs.cache
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/obj/Release/netstandard2.1/Utils.dll
-/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/obj/Release/netstandard2.1/Utils.pdb
