@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "tJNmojEtlkfcodyqJRb2f9GjFmt/tStRQ4Kx5G6yCtcm8qowEyX+9a6Aexv7kBbM8Ph2kZPqlHMaMi2jnZkQOg==",
+  "success": true,
+  "projectFilePath": "/home/student/comp_2020_pawel_chmielewski/02_entity_framework_core/02_exercise/project/Utils/Utils.csproj",
+  "expectedPackageFiles": [
+    "/home/student/.nuget/packages/microsoft.codeanalysis.fxcopanalyzers/3.3.0/microsoft.codeanalysis.fxcopanalyzers.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.codeanalysis.versioncheckanalyzer/3.3.0/microsoft.codeanalysis.versioncheckanalyzer.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.codequality.analyzers/3.3.0/microsoft.codequality.analyzers.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.configuration/3.1.9/microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.9/microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.configuration.binder/3.1.9/microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.9/microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.9/microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.logging/3.1.9/microsoft.extensions.logging.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.9/microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.options/3.1.9/microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.primitives/3.1.9/microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.netcore.analyzers/3.3.0/microsoft.netcore.analyzers.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.netframework.analyzers/3.3.0/microsoft.netframework.analyzers.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/home/student/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/home/student/.nuget/packages/system.memory/4.5.2/system.memory.4.5.2.nupkg.sha512",
+    "/home/student/.nuget/packages/system.numerics.vectors/4.4.0/system.numerics.vectors.4.4.0.nupkg.sha512",
+    "/home/student/.nuget/packages/system.runtime.compilerservices.unsafe/4.7.1/system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
