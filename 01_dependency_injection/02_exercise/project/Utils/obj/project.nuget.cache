@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "tOM8cTYC/KOcJ0boT3fN+ZNS6afwOYt8KNuTjVOJbbaSqOK3CykZ4Pjwd1PyVKa5OEbR5qq2JkCS83XjPS8WNw==",
+  "success": true,
+  "projectFilePath": "/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/Utils/Utils.csproj",
+  "expectedPackageFiles": [
+    "/home/student/.nuget/packages/microsoft.codeanalysis.fxcopanalyzers/3.3.0/microsoft.codeanalysis.fxcopanalyzers.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.codeanalysis.versioncheckanalyzer/3.3.0/microsoft.codeanalysis.versioncheckanalyzer.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.codequality.analyzers/3.3.0/microsoft.codequality.analyzers.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.9/microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.9/microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.netcore.analyzers/3.3.0/microsoft.netcore.analyzers.3.3.0.nupkg.sha512",
+    "/home/student/.nuget/packages/microsoft.netframework.analyzers/3.3.0/microsoft.netframework.analyzers.3.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

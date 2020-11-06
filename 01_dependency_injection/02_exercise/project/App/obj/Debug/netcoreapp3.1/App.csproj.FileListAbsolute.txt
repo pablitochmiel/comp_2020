@@ -1,0 +1,16 @@
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/bin/Debug/netcoreapp3.1/App
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/bin/Debug/netcoreapp3.1/App.deps.json
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/bin/Debug/netcoreapp3.1/App.runtimeconfig.json
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/bin/Debug/netcoreapp3.1/App.runtimeconfig.dev.json
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/bin/Debug/netcoreapp3.1/App.dll
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/bin/Debug/netcoreapp3.1/App.pdb
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/bin/Debug/netcoreapp3.1/Utils.dll
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/bin/Debug/netcoreapp3.1/Utils.pdb
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/obj/Debug/netcoreapp3.1/App.csprojAssemblyReference.cache
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/obj/Debug/netcoreapp3.1/App.AssemblyInfoInputs.cache
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/obj/Debug/netcoreapp3.1/App.AssemblyInfo.cs
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/obj/Debug/netcoreapp3.1/App.csproj.CoreCompileInputs.cache
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/obj/Debug/netcoreapp3.1/App.csproj.CopyComplete
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/obj/Debug/netcoreapp3.1/App.dll
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/obj/Debug/netcoreapp3.1/App.pdb
+/home/student/comp_2020_pawel_chmielewski/01_dependency_injection/02_exercise/project/App/obj/Debug/netcoreapp3.1/App.genruntimeconfig.cache
