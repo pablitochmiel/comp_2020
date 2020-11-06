@@ -1,0 +1,63 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/student/comp_2020_pawel_chmielewski/02_entity_framework_core/02_exercise/project/App/App.csproj",
+    "projectName": "App",
+    "projectPath": "/home/student/comp_2020_pawel_chmielewski/02_entity_framework_core/02_exercise/project/App/App.csproj",
+    "outputPath": "/home/student/comp_2020_pawel_chmielewski/02_entity_framework_core/02_exercise/project/App/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/home/student/comp_2020_pawel_chmielewski/02_entity_framework_core/02_exercise/project/Utils/Utils.csproj": {
+            "projectPath": "/home/student/comp_2020_pawel_chmielewski/02_entity_framework_core/02_exercise/project/Utils/Utils.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "allWarningsAsErrors": true,
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[3.3.0, )"
+        },
+        "Microsoft.Extensions.Logging.Console": {
+          "target": "Package",
+          "version": "[3.1.9, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/home/student/.dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+    }
+  }
+}
