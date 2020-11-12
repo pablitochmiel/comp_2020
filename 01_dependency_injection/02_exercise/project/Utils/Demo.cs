@@ -1,19 +1,26 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
 
 namespace Utils
 {
     public class Demo
     {
-        private readonly string _name;
-
-        public Demo(string name)
+        // private readonly string _name;
+        //
+        // public Demo()
+        // {
+        //     _name = name;
+        // }
+        
+        private readonly ILogger<Demo> _logger;
+        
+        public Demo(ILogger<Demo> logger)
         {
-            _name = name;
+            _logger = logger;
         }
 
-        public void Run()
+        public void Run(string name)
         {
-            Console.WriteLine($"Hello {_name}!");
+            _logger.LogInformation($"Hello {name}!");
         }
     }
 }

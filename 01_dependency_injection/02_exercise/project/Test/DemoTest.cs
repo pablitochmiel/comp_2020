@@ -1,5 +1,5 @@
 using System;
-using System.IO;
+using Microsoft.Extensions.Logging;
 using Moq;
 using Utils;
 using Xunit;
@@ -11,14 +11,26 @@ namespace Test
         [Fact]
         public void Run()
         {
-            var mock = new Mock<TextWriter>();
-            Console.SetOut(mock.Object);
-
-            const string name = "John";
-            mock.Setup(tw => tw.WriteLine($"Hello {name}!"));
+            // var mock = new Mock<TextWriter>();
+            // Console.SetOut(mock.Object);
+            var mock = new Mock<ILogger<Demo>>();
             
-            var demo = new Demo(name);
-            demo.Run();
+            const string name = "John";
+            // mock.Setup(tw => tw.WriteLine($"Hello {name}!"));
+            
+            //var demo = new Demo(name);
+            var demo = new Demo(mock.Object);
+            
+            demo.Run(name);
+            
+            mock.Verify(
+                x => x.Log(
+                    It.IsAny<LogLevel>(), 
+                    It.IsAny<EventId>(),
+                    It.Is<It.IsAnyType>((v, t) => v.ToString() == $"Hello {name}!"),
+                    It.IsAny<Exception>(),
+                    It.Is<Func<It.IsAnyType, Exception, string>>((v, t) => true)));
+        
         }
     }
 }
