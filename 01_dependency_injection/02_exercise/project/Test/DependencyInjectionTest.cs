@@ -1,4 +1,6 @@
 using Xunit;
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace Test
 {
@@ -41,5 +43,49 @@ namespace Test
         }
 
         // TODO: Add tests...
+        
+        [Fact]
+        public void CreatingBar()
+        {
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddTransient<IFoo, Foo>();
+            serviceCollection.AddTransient<Bar>();
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+            Assert.IsType<Bar>(serviceProvider.GetService<Bar>());
+        }
+
+        [Fact]
+        public void AddTransient()
+        {
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddTransient<IFoo, Foo>();
+            serviceCollection.AddTransient<Bar>();
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+            /*var example = serviceProvider.GetService<Bar>();
+            var example2 = serviceProvider.GetService<Bar>();*/
+            Assert.NotEqual(serviceProvider.GetService<Bar>(),serviceProvider.GetService<Bar>());
+        }
+        
+        [Fact]
+        public void AddSingleton()
+        {
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddSingleton<IFoo, Foo>();
+            serviceCollection.AddSingleton<Bar>();
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+            Assert.Equal(serviceProvider.GetService<Bar>(),serviceProvider.GetService<Bar>());
+        }
+        
+        [Fact]
+        public void AddScoped()
+        {
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddScoped<IFoo, Foo>();
+            serviceCollection.AddScoped<Bar>();
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+            Assert.Equal(serviceProvider.GetService<Bar>(),serviceProvider.GetService<Bar>());
+            var anotherServiceProvider = serviceCollection.BuildServiceProvider();
+            Assert.NotEqual(serviceProvider.GetService<Bar>(),anotherServiceProvider.GetService<Bar>());
+        }
     }
 }
