@@ -13,7 +13,7 @@ namespace App
             // TODO: Create and use DB context...
             using (var db = new ProjectContext())
             {
-                var project = new Project {Name = "nazwa",Description = "opis",CreationDate = DateTime.Now};
+                var project = new Project {Name = "nazwa",Description = "opis",CreationDate = DateTime.Now,Uri = new Uri("http://example.com")};
                 db.Projects?.Add(project);
                 db.SaveChanges();
             }
@@ -25,7 +25,7 @@ namespace App
                 foreach (var project in projects)
                 {
                     Console.WriteLine(project.Id.ToString(provider: null) + project.Name! + project.Description +
-                                      project.CreationDate);
+                                      project.CreationDate+project.Uri);
                 }
             }
 

@@ -15,17 +15,17 @@ namespace Test
             var data = DateTime.Today;
             
             // TODO: Enable in second exercise...
-            // var uri = new Uri("http://example.com");
+            var uri = new Uri("http://example.com");
 
             var project = new Project
             {
                 Id = id, 
                 Name = name, 
                 Description = description, 
-                CreationDate = data
+                CreationDate = data,
                 
                 // TODO: Enable in second exercise...
-                //Uri = uri
+                Uri = uri
             };
 
             Assert.Equal(id, project.Id);
@@ -34,7 +34,7 @@ namespace Test
             Assert.Equal(data, project.CreationDate);
             
             // TODO: Enable in second exercise...
-            // Assert.Equal(uri, project.Uri);
+            Assert.Equal(uri, project.Uri);
         }
     }
 }

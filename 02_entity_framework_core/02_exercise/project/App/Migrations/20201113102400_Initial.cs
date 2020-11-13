@@ -7,7 +7,7 @@ namespace App.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            if (migrationBuilder==null)
+            if(migrationBuilder==null)
                 throw new ArgumentNullException(nameof(migrationBuilder));
             migrationBuilder.CreateTable(
                 name: "Projects",
@@ -17,7 +17,8 @@ namespace App.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: true),
                     Description = table.Column<string>(type: "TEXT", nullable: true),
-                    CreationDate = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    CreationDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Uri = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -27,7 +28,7 @@ namespace App.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            if (migrationBuilder==null)
+            if(migrationBuilder==null)
                 throw new ArgumentNullException(nameof(migrationBuilder));
             migrationBuilder.DropTable(
                 name: "Projects");

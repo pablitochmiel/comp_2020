@@ -10,6 +10,6 @@ namespace Utils
         public DateTime CreationDate { get; set; }
         
         // TODO: Enable in second exercise...
-        // public Uri? Uri { get; set; }
+        public Uri? Uri { get; set; }
     }
 }
