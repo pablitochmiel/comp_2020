@@ -22,18 +22,46 @@ namespace App.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpPost]
+        public IActionResult Post()
         {
-            _logger.LogInformation("test");
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            using (var db = new WeatherForecastContext())
+            {
+                var rng = new Random();
+                var forecast = Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 {
                     Date = DateTime.Now.AddDays(index),
                     TemperatureC = rng.Next(-20, 55),
                     Summary = Summaries[rng.Next(Summaries.Length)]
-                })
-                .ToArray();
+                });
+                foreach (var i in forecast)
+                {
+                    db.WeatherForecasts?.Add(i);
+                }
+                db.SaveChanges();
+            }
+            return new AcceptedResult();
+        }
+
+        [HttpGet]
+        public IEnumerable<WeatherForecast> Get()
+        {
+            _logger.LogInformation("test");
+            // var rng = new Random();
+            // return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            //     {
+            //         Date = DateTime.Now.AddDays(index),
+            //         TemperatureC = rng.Next(-20, 55),
+            //         Summary = Summaries[rng.Next(Summaries.Length)]
+            //     })
+            //     .ToArray();
+            //Post();
+            
+            using (var db = new WeatherForecastContext())
+            {
+                return (db.WeatherForecasts ?? throw new NullReferenceException()).ToList();
+                //return projects;
+            }
         }
     }
 }
