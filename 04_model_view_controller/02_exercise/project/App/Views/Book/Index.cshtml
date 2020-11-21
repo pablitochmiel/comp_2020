@@ -1,0 +1,24 @@
+@model IEnumerable<Utils.Book>
+@{
+    ViewData["Title"] = "All Books";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Books</h1>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="Create">Add</a>
+    <table border="1" width="100%"> 
+    <tr>
+    <th>BookId</th> 
+    <th>Title</th> 
+    <th>Description</th>
+    </tr>
+    @foreach(var row in Model)
+    {
+    <tr> 
+    <td>@row.BookId</td> 
+    <td>@row.Title</td> 
+    <td>@row.Description</td>
+    </tr> 
+    }
+    </table>
+</div>
