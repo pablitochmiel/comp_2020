@@ -1,7 +1,15 @@
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Create Book";
 }
+@model Utils.Book
 
 <div class="text-center">
     <h1 class="display-4">Add Book</h1>
+    <form method="post" action="./store">
+    Title:<br> 
+    <input type="text" name="Title" value="" required><br>
+    Description:<br>
+    <input type="text" name="Description" value="" required><br><br>
+    <input type="submit" value="Submit" class="submit">
+    </form> 
 </div>
