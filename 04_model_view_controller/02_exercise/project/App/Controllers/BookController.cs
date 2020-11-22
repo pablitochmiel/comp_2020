@@ -10,10 +10,10 @@ namespace App.Controllers
     [Authorize]
     public class BookController:Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<BookController> _logger;
         private readonly ApplicationDbContext _context;
 
-        public BookController(ILogger<HomeController> logger,ApplicationDbContext context)
+        public BookController(ILogger<BookController> logger,ApplicationDbContext context)
         {
             _logger = logger;
             _context = context;
@@ -44,7 +44,7 @@ namespace App.Controllers
         {
             _logger.LogInformation("BookController Create()");
             return View();
-            }
+        }
 
         [HttpPost]        
         public IActionResult Store() // - saves the book in the database - redirection to Index after adding or to Store after error
