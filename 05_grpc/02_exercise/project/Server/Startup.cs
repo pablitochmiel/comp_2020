@@ -27,7 +27,7 @@ namespace Server
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<GreeterService>();
+                endpoints.MapGrpcService<Proto.GreeterService>();
 
                 endpoints.MapGet("/", async context =>
                 {

@@ -1,9 +1,10 @@
 using System;
 using System.Threading.Tasks;
+using Greet;
 using Grpc.Core;
 //using Microsoft.Extensions.Logging;
 
-namespace Server
+namespace Proto
 {
     public class GreeterService : Greeter.GreeterBase
     {

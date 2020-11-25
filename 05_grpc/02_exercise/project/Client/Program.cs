@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Greet;
 using Grpc.Net.Client;
 
-namespace GrpcGreeterClient
+namespace Proto
 {
     internal static class Program
     {
