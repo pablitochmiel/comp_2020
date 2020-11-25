@@ -18,7 +18,7 @@ namespace Proto
         {
             if (request == null)
             {
-                throw new ArgumentNullException(nameof(request));
+                throw new ArgumentNullException(request?.Name);
             }
             return Task.FromResult(new HelloReply
             {

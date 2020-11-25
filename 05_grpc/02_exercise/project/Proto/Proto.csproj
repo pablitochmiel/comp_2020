@@ -32,8 +32,8 @@
       </Protobuf>
     </ItemGroup>
 
-    <ItemGroup>
+    <!--ItemGroup>
         <Protobuf Include="Protos/greet.proto" GrpcServices="both" />
-    </ItemGroup>
+    </ItemGroup-->
 
 </Project>
