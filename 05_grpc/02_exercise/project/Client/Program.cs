@@ -5,14 +5,16 @@ using Grpc.Net.Client;
 
 namespace GrpcGreeterClient
 {
-    class Program
+    internal static class Program
     {
-        static async Task Main()
+        private static async Task Main()
         {
-            var httpHandler = new HttpClientHandler();
+            var httpHandler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback =
+                    HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+            };
 
-            httpHandler.ServerCertificateCustomValidationCallback = 
-                HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
 
             using var channel = GrpcChannel.ForAddress("https://localhost:5001",
                 new GrpcChannelOptions { HttpHandler = httpHandler });
