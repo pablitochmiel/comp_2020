@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Blazor.Areas.Identity;
 using Blazor.Data;
 using Microsoft.AspNetCore.Builder;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace Blazor
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup(IConfiguration configuration)
