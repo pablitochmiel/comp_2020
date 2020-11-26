@@ -25,10 +25,8 @@ namespace App
             {
                 return (Control?) Activator.CreateInstance(type) ?? throw new ArgumentNullException(nameof(data));
             }
-            else
-            {
-                return new TextBlock {Text = "Not Found: " + name};
-            }
+
+            return new TextBlock {Text = "Not Found: " + name};
         }
 
         public bool Match(object data)
