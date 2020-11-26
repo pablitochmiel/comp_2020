@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package wrap;
+
+service Wrapper {
+  rpc WrapText (WrapRequest) returns (WrapReply);
+}
+
+// The request message containing the user's name.
+message WrapRequest {
+  string text = 1;
+  int32 nCol=2;
+}
+
+// The response message containing the greetings.
+message WrapReply {
+  string text = 1;
+}
