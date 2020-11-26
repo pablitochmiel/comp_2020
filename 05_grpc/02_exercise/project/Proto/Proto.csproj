@@ -35,5 +35,8 @@
     <!--ItemGroup>
         <Protobuf Include="Protos/greet.proto" GrpcServices="both" />
     </ItemGroup-->
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage"/>
+    </ItemGroup>
 
 </Project>

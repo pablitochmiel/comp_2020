@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Greet;
 using Grpc.Net.Client;
 
-namespace Proto
+namespace Client
 {
+    [ExcludeFromCodeCoverage]
     internal static class Program
     {
         private static async Task Main()
