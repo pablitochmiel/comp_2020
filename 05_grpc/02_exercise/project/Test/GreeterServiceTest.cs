@@ -5,17 +5,17 @@ using Xunit;
 
 namespace Test
 {
-    public class UnitTest1
+    public class GreeterServiceTest
     {
         [Fact]
-        public void Test1()
+        public void ReplyTest()
         {
             var reply = new GreeterService().SayHello(new HelloRequest{Name = "test"},null! );
             Assert.Equal("Hello test",reply.Result.Message);
         }
         
         [Fact]
-        public async System.Threading.Tasks.Task Test2()
+        public async System.Threading.Tasks.Task NullRequestTest()
         {
             await Assert.ThrowsAsync<ArgumentNullException>(()=>new GreeterService().SayHello(null!, null!));
         }
