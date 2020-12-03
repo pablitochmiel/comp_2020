@@ -7,9 +7,12 @@
         <!--
             Breakdown of below expression:
                 [App.Views]*                => 04_model_view_controller/App/Views (*.cshtml)
-                [Proto]*                    => 05_grpc/02_exercise/projectProto/ (generated *.cs)
+                [Proto]*                    => 05_grpc/Proto/ (generated *.cs)
+                [Blazor]Blazor.Shared.*     => 07_blazor/Blazor/Shared (*.razor)
+                [Blazor]Blazor.Pages.*      => 07_blazor/Blazor/Pages (*.razor)
+                [Blazor.Views]*             => 07_blazor/Blazor/Areas/Identity/Pages (*.cshtml)
         -->
-        <Exclude>[App.Views]*,[Proto]*</Exclude>
+        <Exclude>[App.Views]*,[Proto]*,[Blazor]Blazor.Shared.*,[Blazor]Blazor.Pages.*,[Blazor.Views]*,[Microsoft.AspNetCore.Components.Testing]*</Exclude>
        </Configuration>
       </DataCollector>
     </DataCollectors>
