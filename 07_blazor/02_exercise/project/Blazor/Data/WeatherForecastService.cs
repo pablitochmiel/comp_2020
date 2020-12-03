@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Blazor.Data
 {
-    public class WeatherForecastService
+    public class WeatherForecastService : IWeatherForecastService
     {
         private static readonly string[] Summaries =
         {

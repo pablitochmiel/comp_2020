@@ -4,15 +4,12 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
 
         <IsPackable>false</IsPackable>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-        <NoWarn>CA1303</NoWarn>
-        <LangVersion>preview</LangVersion>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="JUnitTestLogger" Version="1.1.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+        <PackageReference Include="Moq" Version="4.15.2" />
         <PackageReference Include="xunit" Version="2.4.0" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
         <PackageReference Include="coverlet.collector" Version="1.2.0" />
@@ -20,6 +17,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Blazor\Blazor.csproj" />
+      <ProjectReference Include="..\Microsoft.AspNetCore.Components.Testing\Microsoft.AspNetCore.Components.Testing.csproj" />
     </ItemGroup>
 
 </Project>
