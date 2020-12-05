@@ -23,6 +23,7 @@
 
     <ItemGroup>
         <Protobuf Include="Protos/greet.proto" GrpcServices="both" />
+        <Protobuf Include="Protos/ramInfo.proto" GrpcServices="both" />
     </ItemGroup>
     
     <ItemGroup>

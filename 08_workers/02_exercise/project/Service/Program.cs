@@ -43,6 +43,7 @@ namespace Service
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGrpcService<GreeterService>();
+                endpoints.MapGrpcService<RamInfoService>();
 
                 // endpoints.MapGet("/", async context =>
                 // {
