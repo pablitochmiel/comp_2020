@@ -22,6 +22,7 @@ namespace Service
                 .ConfigureServices((hostContext, services) => { services.AddHostedService<Worker>(); });
     }
     
+    [ExcludeFromCodeCoverage]
     public class GrpcServerStartup
     {
         public void ConfigureServices(IServiceCollection services)
