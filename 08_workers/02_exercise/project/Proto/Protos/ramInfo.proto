@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ram;
+
+// The information service definition.
+service RamInfo {
+  // Sends a greeting
+  rpc GiveInformation (RamRequest) returns (RamReply);
+}
+
+// The request message containing the user's name.
+message RamRequest {
+  
+}
+
+// The response message containing the greetings.
+message RamReply {
+  string message = 1;
+}
