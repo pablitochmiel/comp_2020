@@ -20,32 +20,11 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
     </ItemGroup>
-    
-    <ItemGroup>
-      <Protobuf Include="Protos/greet.proto">
-        <GrpcServices>both</GrpcServices>
-        <Access>Public</Access>
-        <ProtoCompile>True</ProtoCompile>
-        <CompileOutputs>True</CompileOutputs>
-        <OutputDir>obj/Debug/netcoreapp3.1/</OutputDir>
-        <Generator>MSBuild:Compile</Generator>
-      </Protobuf>
-    </ItemGroup>
-    
-    <ItemGroup>
-      <Protobuf Include="Protos/wrap.proto">
-        <GrpcServices>both</GrpcServices>
-        <Access>Public</Access>
-        <ProtoCompile>True</ProtoCompile>
-        <CompileOutputs>True</CompileOutputs>
-        <OutputDir>obj/Debug/netcoreapp3.1/</OutputDir>
-        <Generator>MSBuild:Compile</Generator>
-      </Protobuf>
-    </ItemGroup>
 
-    <!--ItemGroup>
+    <ItemGroup>
         <Protobuf Include="Protos/greet.proto" GrpcServices="both" />
-    </ItemGroup-->
+    </ItemGroup>
+    
     <ItemGroup>
         <AssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage" />
     </ItemGroup>

@@ -15,9 +15,11 @@ namespace Test
         {
             var mock = new Mock<ILogger<Worker>>();
             var worker = new Worker(mock.Object);
-            await worker.StartAsync(CancellationToken.None);
+            //await worker.StartAsync(CancellationToken.None);
+            await Task.WhenAny(worker.StartAsync(CancellationToken.None), Task.Delay(1000));
             await Task.Delay(1000);
-            await worker.StopAsync(CancellationToken.None);
+            //await worker.StopAsync(CancellationToken.None);
+            await Task.WhenAny(worker.StopAsync(CancellationToken.None), Task.Delay(1000));
 
             mock.Verify(
                 x => x.Log(

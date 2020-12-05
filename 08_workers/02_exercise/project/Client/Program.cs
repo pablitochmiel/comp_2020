@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Greet;
 using Grpc.Net.Client;
-using Wrap;
+//using Wrap;
 
 namespace Client
 {
@@ -27,10 +27,10 @@ namespace Client
             var reply = await client.SayHelloAsync(request);
             Console.WriteLine("Greeting: " + reply.Message+"\n");
             
-            var client2 =  new Wrapper.WrapperClient(channel);
-            var request2 = new WrapRequest {Text = "slowo slowo2 slowo3", NCol = 8};
-            var reply2 = await client2.WrapTextAsync(request2);
-            Console.WriteLine(reply2.Text);
+            // var client2 =  new Wrapper.WrapperClient(channel);
+            // var request2 = new WrapRequest {Text = "slowo slowo2 slowo3", NCol = 8};
+            // var reply2 = await client2.WrapTextAsync(request2);
+            // Console.WriteLine(reply2.Text);
         }
     }
 }

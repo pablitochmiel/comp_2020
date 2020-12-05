@@ -29,16 +29,6 @@ namespace Service
                     _logger.LogInformation("Operation Canceled at: {time}", DateTime.Now);
                     break;
                 }
-                // _logger.LogInformation("Worker running at:", DateTimeOffset.Now);
-                // try
-                // {
-                //     await Task.Delay(1000, stoppingToken).ConfigureAwait(false);
-                // }
-                // catch (OperationCanceledException)
-                // {
-                //     _logger.LogInformation("Operation Canceled at:", DateTimeOffset.Now);
-                //     break;
-                // }
             }
         }
     }
