@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +10,7 @@ namespace Spa.Controllers
     [Authorize]
     [ApiController]
     [Route("[controller]")]
+    [ExcludeFromCodeCoverage]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries =

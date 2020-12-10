@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Spa.Controllers
 {
+    [ExcludeFromCodeCoverage]
     public class OidcConfigurationController : Controller
     {
         //private readonly ILogger<OidcConfigurationController> _logger;

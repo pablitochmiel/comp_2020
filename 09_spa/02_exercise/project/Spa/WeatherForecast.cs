@@ -1,7 +1,10 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
+
 // ReSharper disable All
 namespace Spa
 {
+    [ExcludeFromCodeCoverage]
     public class WeatherForecast
     {
         public DateTime Date { get; set; }
