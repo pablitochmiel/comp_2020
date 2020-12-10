@@ -12,7 +12,7 @@
                 [Blazor]Blazor.Pages.*      => 07_blazor/Blazor/Pages (*.razor)
                 [Blazor.Views]*             => 07_blazor/Blazor/Areas/Identity/Pages (*.cshtml)
         -->
-        <Exclude>[App.Views]*,[Proto]*,[Blazor]Blazor.Shared.*,[Blazor]Blazor.Pages.*,[Blazor.Views]*,[Microsoft.AspNetCore.Components.Testing]*,[Spa]*</Exclude>
+        <Exclude>[App.Views]*,[Proto]*,[Blazor]Blazor.Shared.*,[Blazor]Blazor.Pages.*,[Blazor.Views]*,[Microsoft.AspNetCore.Components.Testing]*,[Spa]Spa.Pages.*</Exclude>
        </Configuration>
       </DataCollector>
     </DataCollectors>
